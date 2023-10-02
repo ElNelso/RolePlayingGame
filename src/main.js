@@ -42,3 +42,4 @@ class Jugador extends Personaje {
 document.addEventListener("DOMContentLoaded", () => {
     // Aquí puedes escribir el código para crear y gestionar personajes
 });
+/* .map = Arreglos en vbez de for ocupar esta funcion */
