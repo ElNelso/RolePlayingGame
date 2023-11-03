@@ -23,8 +23,8 @@ let personajeJake = new Personaje(
         descripcion: "Resta 30, 40 o 60 de vida, o nada.",
         usar: function (valorPoder) { let valorMultiplicador = Math.floor(Math.random() * (5 - 1)); let valorAtaque = valorPoder * valorMultiplicador; return valorAtaque }
     },
-    "img/characters/Jake.gif",
-    "img/characters/Jake_avatar.jpeg"
+    "../img/characters/Jake.gif",
+    "../img/characters/Jake_avatar.jpeg"
 )
 
 let personajeGoku = new Personaje(
@@ -41,8 +41,8 @@ let personajeGoku = new Personaje(
         descripcion: "Puede restar 100 de vida o fallar",
         usar: function (valorPoder) { let valorSuerte = Math.random(); if (valorSuerte >= 0.5) { valorAtaque = valorPoder * 2 } else { valorAtaque = 0 }; return valorAtaque }
     },
-    "./img/characters/Goku.gif",
-    "./img/characters/Goku_avatar.jpeg"
+    "../img/characters/Goku.gif",
+    "../img/characters/Goku_avatar.jpeg"
 )
 
 let personajeGhost = new Personaje(
@@ -59,8 +59,8 @@ let personajeGhost = new Personaje(
         descripcion: "El enemigo o tú pierde 75 de vida",
         usar: function (valorPoder) { let valorSuerte = Math.random(); if (valorSuerte >= 0.5) { valorAtaque = valorPoder * 3; return valorAtaque } else { personajeReptiliano.vida -= valorPoder * 3; return 0 } }
     },
-    "./img/characters/Ghost.gif",
-    "./img/characters/Ghost_avatar.jpeg"
+    "../img/characters/Ghost.gif",
+    "../img/characters/Ghost_avatar.jpeg"
 )
 
 let personajeSonic = new Personaje(
@@ -77,8 +77,8 @@ let personajeSonic = new Personaje(
         descripcion: "Resta 80 de vida, pierdes 20 de vida",
         usar: function (valorPoder) { personajeSonic.vida -= 20; return 80 }
     },
-    "./img/characters/Sonic.gif",
-    "./img/characters/Sonic_avatar.jpg"
+    "../img/characters/Sonic.gif",
+    "../img/characters/Sonic_avatar.jpg"
 )
 
 // Lista de personajes para la batalla
